@@ -3,10 +3,10 @@
 Rails Base App
 
 * Ruby version
-..*ruby 2.0.0p645 (2015-04-13 revision 50299) [universal.x86_64-darwin15]
+  *ruby 2.0.0p645 (2015-04-13 revision 50299) [universal.x86_64-darwin15]
 
 * Rails version
-..*4.2.5.1
+  *4.2.5.1
 
 * System dependencies
 
@@ -15,13 +15,13 @@ Rails Base App
 * Database creation
 
 * Database initialization
-..* test > sqlite3
-..* dev  > mysql2
-..* prod > mysql2
+  * test > sqlite3
+  * dev  > mysql2
+  * prod > mysql2
 
 
 * Gems
-..* mysql2-0.4.3
+  * mysql2-0.4.3
 
 * How to run the test suite
 
