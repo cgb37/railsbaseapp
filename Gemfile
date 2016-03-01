@@ -45,3 +45,12 @@ group :development do
   gem 'spring'
 end
 
+
+# dev db
+gem 'mysql2'
+
+#ui bootstrap
+#gem 'bootstrap-sass'
+
+
+
