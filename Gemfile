@@ -46,11 +46,11 @@ group :development do
 end
 
 
-# dev db
+# dev db mysql2-0.4.3
 gem 'mysql2'
 
 #ui bootstrap
-#gem 'bootstrap-sass'
+gem 'bootstrap-sass'
 
 
 
