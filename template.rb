@@ -43,7 +43,7 @@ def apply_template!
 
 
   # Use active_admin_import for csv import - https://github.com/activeadmin-plugins/active_admin_import
-  gem "active_admin_import" , github: "Fivell/active_admin_import"
+  gem 'active_admin_import' , github: 'Fivell/active_admin_import'
 
   # use active record store to prevent cookie overflow issue when importing
   # https://github.com/rails/activerecord-session_store
@@ -59,8 +59,8 @@ def apply_template!
 
 
 
-
-  generate("active_admin:install")
+  #callback
+  after_bundle
 
 
 
@@ -68,16 +68,15 @@ end
 
 after_bundle do
 
-  rake("db:migrate")
-
   remove_files
 
   copy_files
 
   run_generators
 
+  set_routes
 
-  after_bundle
+  rake_migrations
 
 end
 
@@ -89,34 +88,37 @@ end
 
 def remove_files
 
-  remove_file("app/views/layouts/application.html.erb")
+  remove_file('app/views/layouts/application.html.erb')
 
 end
 
 
 def copy_files
 
-  copy_file("app/templates/app_copy_src/views/layouts/application.html.erb", "app/views/layouts/application.html.erb")
+  copy_file('app/templates/app_copy_src/views/layouts/application.html.erb', 'app/views/layouts/application.html.erb')
 
 end
 
 
 def run_generators
 
-  generate(:controller, "Home", "index")
+  generate(:controller, 'Home', 'index')
 
-  #generate("active_admin:install")
+  generate('active_admin:install')
 
 end
 
 
+def set_routes
 
-def after_bundle
+  #route "root to: 'home#index'"
+end
 
-  route "root to: 'home#index'"
 
-  rake("db:migrate")
-  #rake("db:seed")
+def rake_migrations
+
+  #rake('db:migrate')
+  #rake('db:seed')
 
 end
 
