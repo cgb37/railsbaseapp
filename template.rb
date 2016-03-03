@@ -84,6 +84,9 @@ end
 def remove_files
 
   remove_file('app/views/layouts/application.html.erb')
+  remove_file('app/views/layouts/_header.html.erb')
+
+  remove_file('app/assets/stylesheets/application.css')
 
 end
 
@@ -91,6 +94,9 @@ end
 def copy_files
 
   copy_file('app/templates/app_copy_src/views/layouts/application.html.erb', 'app/views/layouts/application.html.erb')
+  copy_file('app/templates/app_copy_src/views/layouts/_header.html.erb', 'app/views/layouts/_header.html.erb')
+  copy_file('app/templates/app_copy_src/assets/stylesheets/application.scss', 'app/assets/stylesheets/application.scss')
+  copy_file('app/templates/app_copy_src/assets/stylesheets/bootstrap_overrides.scss', 'app/assets/stylesheets/bootstrap_overrides.scss')
 
 end
 
@@ -101,7 +107,7 @@ def run_generators
 
   #generate('active_admin:install')
 
-  generate('devise:views')
+  #generate('devise:views')
 
 end
 
