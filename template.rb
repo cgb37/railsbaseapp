@@ -59,26 +59,21 @@ def apply_template!
 
 
 
-  #callback
-  after_bundle
-
-
-
-end
-
-after_bundle do
+  #callbacks
+  run_generators
 
   remove_files
 
   copy_files
 
-  run_generators
-
   set_routes
 
   rake_migrations
 
+
+
 end
+
 
 
 def source_paths
@@ -104,7 +99,9 @@ def run_generators
 
   generate(:controller, 'Home', 'index')
 
-  generate('active_admin:install')
+  #generate('active_admin:install')
+
+  generate('devise:views')
 
 end
 
