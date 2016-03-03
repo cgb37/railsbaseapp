@@ -54,3 +54,15 @@ gem 'bootstrap-sass'
 
 
 
+
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+gem 'formtastic'
+gem 'kaminari'
+gem 'ransack'
+gem 'cancancan'
+gem 'faker'
+gem 'jquery-datatables-rails', '~> 3.2.0'
+gem 'ajax-datatables-rails'
+gem 'active_admin_import', github: 'Fivell/active_admin_import'
+gem 'activerecord-session_store'
