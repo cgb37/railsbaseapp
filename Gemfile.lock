@@ -71,10 +71,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-
     ajax-datatables-rails (0.3.1)
       railties (>= 3.1)
-
     arbre (1.0.3)
       activesupport (>= 3.0.0)
     arel (6.0.3)
@@ -82,11 +80,9 @@ GEM
       execjs
       json
     bcrypt (3.1.10)
-
     best_in_place (3.1.0)
       actionpack (>= 3.2)
       railties (>= 3.2)
-
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.5.1)
@@ -248,9 +244,8 @@ DEPENDENCIES
   active_admin_import!
   activeadmin!
   activerecord-session_store
-
   ajax-datatables-rails
-
+  best_in_place
   bootstrap-sass
   byebug
   cancancan
