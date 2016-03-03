@@ -54,3 +54,14 @@ gem 'bootstrap-sass'
 
 
 
+
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+gem 'formtastic'
+gem 'kaminari'
+gem 'ransack'
+gem 'cancancan'
+gem 'active_admin_import', github: 'Fivell/active_admin_import'
+gem 'activerecord-session_store'
+gem 'faker'
+gem 'best_in_place'
